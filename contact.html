@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Tech Co. - Contact</title>
+  <meta name="description" content="Get in touch with AI Tech Co. for AI strategy, custom apps, and implementation support." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="font-[Inter] text-gray-900 bg-white">
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="text-2xl font-semibold text-indigo-700">AI Tech Co.</span>
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-indigo-600 transition-all duration-300">Home</a>
+        <a href="about.html" class="text-gray-700 hover:text-indigo-600 transition-all duration-300">About</a>
+        <a href="solutions.html" class="text-gray-700 hover:text-indigo-600 transition-all duration-300">Solutions</a>
+        <a href="contact.html" class="text-gray-700 hover:text-indigo-600 transition-all duration-300">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="min-h-screen bg-cover bg-center relative" style="background-image: url('https://images.unsplash.com/photo-1746173097711-65998b73d747?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw5fHxzbGVlayUyMG9mZmljZSUyMHdpdGglMjBBSSUyMGRhc2hib2FyZHN8ZW58MHwwfHx8MTc1OTQ3NDQzN3ww&ixlib=rb-4.1.0&q=80&w=1080');">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10 max-w-3xl mx-auto px-4 py-40 text-center text-white">
+      <h1 class="font-[Montserrat] text-4xl md:text-5xl font-bold mb-4">Get in touch</h1>
+      <p class="text-lg md:text-xl mb-8">Tell us about your AI needs, and we’ll tailor a plan to deliver value fast.</p>
+      <div class="flex justify-center gap-4 mb-6">
+        <a href="solutions.html" class="bg-white text-indigo-600 px-6 py-3 rounded-full border border-white hover:bg-indigo-50 transition-all duration-300">View Solutions</a>
+        <a href="index.html" class="bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-500 transition-all duration-300">Back Home</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="py-16">
+    <div class="max-w-4xl mx-auto px-4 md:px-6">
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-4" onsubmit="return false;">
+        <div>
+          <label class="block text-sm font-medium mb-1">Name</label>
+          <input type="text" required class="w-full border border-gray-300 rounded-md p-3" placeholder="Your name" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Email</label>
+          <input type="email" required class="w-full border border-gray-300 rounded-md p-3" placeholder="you@example.com" />
+        </div>
+        <div class="md:col-span-2">
+          <label class="block text-sm font-medium mb-1">Message</label>
+          <textarea rows="5" class="w-full border border-gray-300 rounded-md p-3" placeholder="Tell us about your AI project..."></textarea>
+        </div>
+        <div class="md:col-span-2 flex items-center gap-4">
+          <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-500 transition-all duration-300">Send Message</button>
+          <span class="text-sm text-gray-500">We typically reply within 1 business day.</span>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="bg-gray-900 text-gray-100 py-8">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm">© 2025 AI Tech Co. All rights reserved.</p>
+      <p class="text-sm">Privacy</p>
+    </div>
+  </footer>
+
+  <script>
+    // Basic form validation feedback (demo)
+    document.querySelector('form')?.addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Thanks! Your message has been captured for review.');
+    });
+  </script>
+</body>
+</html>
