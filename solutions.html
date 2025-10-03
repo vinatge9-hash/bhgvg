@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Tech Co. - Solutions</title>
+  <meta name="description" content="Explore AI Tech Co.'s solutions: Custom AI apps, automation, data analytics, and more to transform your business." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="font-[Inter] text-gray-900 bg-white">
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="text-2xl font-semibold text-indigo-700">AI Tech Co.</span>
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-indigo-600 transition-all duration-300">Home</a>
+        <a href="about.html" class="text-gray-700 hover:text-indigo-600 transition-all duration-300">About</a>
+        <a href="solutions.html" class="text-gray-700 hover:text-indigo-600 transition-all duration-300">Solutions</a>
+        <a href="contact.html" class="text-gray-700 hover:text-indigo-600 transition-all duration-300">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="min-h-screen bg-cover bg-center relative" style="background-image: url('https://images.pexels.com/photos/8439001/pexels-photo-8439001.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-4 py-40 text-center text-white">
+      <h1 class="font-[Montserrat] text-4xl md:text-5xl font-bold mb-4">AI Solutions & Services</h1>
+      <p class="text-lg md:text-xl mb-8">From strategy to deployment, we accelerate value with practical AI capabilities.</p>
+      <div class="flex justify-center gap-4">
+        <a href="contact.html" class="bg-white text-indigo-600 px-6 py-3 rounded-full border border-white hover:bg-indigo-50 transition-all duration-300">Request a Quote</a>
+        <a href="index.html" class="bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-500 transition-all duration-300">Back Home</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="my-16">
+    <section class="max-w-7xl mx-auto px-4 md:px-6 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <article class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl">
+        <h3 class="text-xl font-semibold mb-2">Custom AI Applications</h3>
+        <p class="text-gray-600">Tailored AI apps integrated with your tech stack for seamless workflows.</p>
+      </article>
+      <!-- Card 2 -->
+      <article class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl">
+        <h3 class="text-xl font-semibold mb-2">AI Strategy & Roadmapping</h3>
+        <p class="text-gray-600">Actionable roadmaps that align AI initiatives with business goals.</p>
+      </article>
+      <!-- Card 3 -->
+      <article class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl">
+        <h3 class="text-xl font-semibold mb-2">Data Analytics & Visualization</h3>
+        <p class="text-gray-600">Insights that power decisions with clear, interactive dashboards.</p>
+      </article>
+      <!-- Card 4 -->
+      <article class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl">
+        <h3 class="text-xl font-semibold mb-2">Computer Vision</h3>
+        <p class="text-gray-600">Image & video analysis for quality control, security, and automation.</p>
+      </article>
+      <!-- Card 5 -->
+      <article class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl">
+        <h3 class="text-xl font-semibold mb-2">Natural Language Processing</h3>
+        <p class="text-gray-600">Conversational AI, sentiment analysis, and document understanding.</p>
+      </article>
+      <!-- Card 6 -->
+      <article class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl">
+        <h3 class="text-xl font-semibold mb-2">MLOps & Deployment</h3>
+        <p class="text-gray-600">Efficient, scalable ML pipelines from model to production.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-gray-100 py-8">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm">© 2025 AI Tech Co. All rights reserved.</p>
+      <p class="text-sm">Security • Compliance</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple scroll reveal for cards
+    document.addEventListener('DOMContentLoaded', () => {
+      const items = document.querySelectorAll('section, main > section > article, main > section > div');
+      items.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 600ms ease-out, transform 600ms ease-out';
+      });
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.style.opacity = '1';
+            e.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.15 });
+      items.forEach(i => obs.observe(i));
+    });
+  </script>
+</body>
+</html>
